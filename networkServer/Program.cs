@@ -70,7 +70,7 @@ namespace Application
             return deserialized;
         }
 
-        public static async void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var listener = await CreateListenerSocket("localhost", 8080);
             var handler = await listener.AcceptAsync();
